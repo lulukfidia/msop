@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lembar Dokumen SOP | MSOP Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="logo">MSOP<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="services.html">Direktori</a></li>
+        <li><a href="detail.html" class="active">Lembar SOP</a></li>
+        <li><a href="create.html">Ajukan SOP</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="audit.html">Audit</a></li>
+        <li><a href="faq.html">Bantuan</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <span class="tag">Dokumen Resmi • Kode: SOP-IT-01</span>
+      <h1>SOP Keamanan Data & Infrastruktur IT</h1>
+      <p>Berlaku Efektif: 1 November 2026 • Revisi: 03 • Disetujui oleh: Kepala Operasional</p>
+      <button onclick="window.print()" class="btn btn-primary" style="margin-top: 10px;">Cetak / Simpan PDF</button>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="doc-paper">
+        <div class="doc-block">
+          <h3>1. Tujuan Prosedur</h3>
+          <p>Menjamin kerahasiaan, integritas, dan ketersediaan seluruh data digital perusahaan serta mencegah akses tidak sah pada jaringan internal.</p>
+        </div>
+
+        <div class="doc-block">
+          <h3>2. Ruang Lingkup</h3>
+          <p>Berlaku untuk seluruh karyawan tetap, tenaga kontrak, dan pihak ketiga yang menggunakan perangkat lunak maupun jaringan perusahaan.</p>
+        </div>
+
+        <div class="doc-block">
+          <h3>3. Langkah-Langkah Pelaksanaan</h3>
+          <div class="step-list">
+            <div class="step-item">
+              <span class="step-num">1</span>
+              <div>
+                <strong>Manajemen Kata Sandi</strong>
+                <p>Setiap pengguna wajib memakai kombinasi minimal 12 karakter dan memperbarui kata sandi setiap 90 hari kalender.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <span class="step-num">2</span>
+              <div>
+                <strong>Pencadangan Data (Backup)</strong>
+                <p>Sistem server melakukan pencadangan otomatis setiap pukul 00:00 WIB ke penyimpanan cadangan terenkripsi.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <span class="step-num">3</span>
+              <div>
+                <strong>Pelaporan Insiden Keamanan</strong>
+                <p>Apabila ditemukan aktivitas mencurigakan, pengguna wajib melapor ke Helpdesk IT maksimal 15 menit setelah kejadian.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 MSOP Portal. Hak Cipta Dilindungi.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

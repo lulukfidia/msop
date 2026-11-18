@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | MSOP Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="logo">MSOP<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="services.html">Direktori</a></li>
+        <li><a href="detail.html">Lembar SOP</a></li>
+        <li><a href="create.html">Ajukan SOP</a></li>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="audit.html">Audit</a></li>
+        <li><a href="faq.html">Bantuan</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <span class="tag">Ringkasan Operasional</span>
+      <h1>Dashboard Pemantauan MSOP</h1>
+      <p>Statistik dokumen aktif, pengajuan revisi, dan riwayat pembaruan terbaru.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid-3">
+        <div class="card stat-card">
+          <span class="stat-label">Total Dokumen SOP</span>
+          <h2 class="stat-number">48</h2>
+          <span class="stat-note">Aktif & terverifikasi</span>
+        </div>
+        <div class="card stat-card">
+          <span class="stat-label">Pengajuan Revisi</span>
+          <h2 class="stat-number">5</h2>
+          <span class="stat-note">Menunggu tinjauan manajer</span>
+        </div>
+        <div class="card stat-card">
+          <span class="stat-label">Tingkat Kepatuhan</span>
+          <h2 class="stat-number">96.4%</h2>
+          <span class="stat-note">Audit kuartal berjalan</span>
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <h2>Log Pembaruan Dokumen Terbaru</h2>
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Kode SOP</th>
+                <th>Judul Prosedur</th>
+                <th>Divisi</th>
+                <th>Tanggal Update</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>SOP-IT-01</strong></td>
+                <td>Keamanan Data & Jaringan</td>
+                <td>IT</td>
+                <td>12 Nov 2026</td>
+                <td><span class="status-badge status-active">Disetujui</span></td>
+              </tr>
+              <tr>
+                <td><strong>SOP-OPS-04</strong></td>
+                <td>Pengadaan Aset & Barang</td>
+                <td>Operasional</td>
+                <td>15 Nov 2026</td>
+                <td><span class="status-badge status-active">Disetujui</span></td>
+              </tr>
+              <tr>
+                <td><strong>SOP-FIN-09</strong></td>
+                <td>Klaim Perjalanan Dinas</td>
+                <td>Keuangan</td>
+                <td>17 Nov 2026</td>
+                <td><span class="status-badge status-pending">Ditinjau</span></td>
+              </tr>
+              <tr>
+                <td><strong>SOP-HR-02</strong></td>
+                <td>Cuti & Izin Karyawan</td>
+                <td>HRD</td>
+                <td>18 Nov 2026</td>
+                <td><span class="status-badge status-active">Disetujui</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 MSOP Portal. Hak Cipta Dilindungi.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

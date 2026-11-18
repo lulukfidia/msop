@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Direktori SOP | MSOP Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="logo">MSOP<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="services.html" class="active">Direktori</a></li>
+        <li><a href="detail.html">Lembar SOP</a></li>
+        <li><a href="create.html">Ajukan SOP</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="audit.html">Audit</a></li>
+        <li><a href="faq.html">Bantuan</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Direktori SOP Perusahaan</h1>
+      <p>Cari dokumen operasional berdasarkan judul atau filter departemen.</p>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Cari judul SOP atau kata kunci...">
+      </div>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="IT">Departemen IT</button>
+        <button class="filter-btn" data-filter="Operasional">Operasional</button>
+        <button class="filter-btn" data-filter="HRD">HRD & Umum</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid-3" id="sopList">
+        <div class="card sop-item" data-category="IT">
+          <span class="tag">Departemen IT</span>
+          <h3>SOP Keamanan Data & Jaringan</h3>
+          <p>Prosedur pencadangan berkala, manajemen kata sandi, dan protokol akses server.</p>
+          <a href="detail.html" class="btn-text">Buka Lembar SOP &rarr;</a>
+        </div>
+
+        <div class="card sop-item" data-category="Operasional">
+          <span class="tag">Operasional</span>
+          <h3>SOP Pengadaan Aset & Barang</h3>
+          <p>Alur pengajuan anggaran, verifikasi vendor, hingga serah terima inventaris kantor.</p>
+          <a href="detail.html" class="btn-text">Buka Lembar SOP &rarr;</a>
+        </div>
+
+        <div class="card sop-item" data-category="HRD">
+          <span class="tag">HRD & Umum</span>
+          <h3>SOP Cuti & Izin Karyawan</h3>
+          <p>Ketentuan pengajuan cuti tahunan, izin sakit, serta pelimpahan tugas sementara.</p>
+          <a href="detail.html" class="btn-text">Buka Lembar SOP &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 MSOP Portal. Hak Cipta Dilindungi.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
